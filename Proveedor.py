@@ -1,9 +1,9 @@
 
 class Proveedor:
-    def __init__(self, nombProv, direccion, datosContacto):
-        self.nombProv = nombProv
+    def __init__(self, NombProv:string, direccion:string, DatosContacto:DatoContacto):
+        self.nombProv = NombProv
         self.direccion = direccion
-        self.datosContacto = datosContacto
+        self.datosContacto = DatosContacto
 
     def proveedor(self):
         pass
