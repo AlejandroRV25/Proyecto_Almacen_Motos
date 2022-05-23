@@ -1,6 +1,6 @@
 
 class Producto:
-    def __init__(self, id, nomProduc, precio):
+    def __init__(self, id:int, nomProduc:string, precio:int):
         self.id = id
         self.nomProduc = nomProduc
         self.precio = precio
