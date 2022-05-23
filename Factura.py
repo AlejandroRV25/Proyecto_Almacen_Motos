@@ -29,8 +29,8 @@ class Factura:
             for i in range(cantidad):
                 os.system('cls')
                 cliente = cliente ('cliente: ')
-                fecha = fecha ('fecha: ')
-                numFactura = numFactura ('numero de factura: ')
+                fecha = string ('fecha: ')
+                numFactura = int ('numero de factura: ')
                 producto = producto ('producto: ')
        
                 
