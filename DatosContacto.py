@@ -1,6 +1,7 @@
-
-class DatosContacto:
-    def __init__(self, correo, telefono):
+import os
+import csv
+class DatoContacto:
+    def __init__(self, correo:string, telefono:int):
         self.correo = correo
         self.telefono = telefono
 
@@ -15,4 +16,14 @@ class DatosContacto:
 
     def set_telefono(self, telefono):
         self.telefono = telefono
+        
+    def DatoContacto(contacto):
+        cantidad = int(input('informacion a recibir'))
+        
+        with open(contacto, 'a', newline='') as archivo_csv:
+            writer = csv.writer(archivo_csv, delimiter=',')
+            for i in range(cantidad):
+                os.system('cls')
+                correo = input('correo: ')
+                telefono = input('telefono: ')
                 
