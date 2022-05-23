@@ -1,14 +1,14 @@
 
 class Cliente:
-    def __init__(self, nomClien, datoContacto):
-        self.nomClien = nomClien
-        self.datoContacto = datoContacto
+    def __init__(self, Usuario:Usuario, datoContacto:DatoContacto):
+        self.Usuario = Usuario
+        self.DatoContacto = DatoContacto
 
     def cliente(self):
         pass
 
-    def get_nombre(self):
-        return self.nomClien
+    def get_Usuario(self):
+        return self.usuario
 
-    def set_nombre(self, nombre):
-        self.nomClien = nombre
+    def set_usuario(self, usuario):
+        self.Usuario=usuario
