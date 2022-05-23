@@ -26,4 +26,5 @@ class DatoContacto:
                 os.system('cls')
                 correo = input('correo: ')
                 telefono = input('telefono: ')
+                writer.writerow([ telefono, correo])
                 
