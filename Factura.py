@@ -25,6 +25,7 @@ class Factura:
                 fecha = string ('fecha: ')
                 numFactura = int ('numero de factura: ')
                 producto = producto ('producto: ')
+                writer.writerow([cliente, fecha, numFactura, producto])
        
                 
                 
