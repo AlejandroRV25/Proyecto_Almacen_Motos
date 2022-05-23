@@ -1,6 +1,6 @@
 
 class Servicio:
-    def __init__(self, precio, fecha, tipo, problema):
+    def __init__(self, PrecioServ:int, FechaServ:string, tipo:string, problema:string):
         self.precio = precio
         self.fecha = fecha
         self.tipo = tipo
