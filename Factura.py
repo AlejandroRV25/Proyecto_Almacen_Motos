@@ -1,6 +1,7 @@
-
+import os
+import csv
 class Factura:
-    def __init__(self, producto, cliente, fecha, numFactura):
+    def __init__(self, producto:producto, cliente:cliente, fecha:string, numFactura:int):
         self.producto = producto
         self.cliente = cliente
         self.fecha = fecha
@@ -20,4 +21,19 @@ class Factura:
 
     def set_numFactura(self, numFactura):
         self.numFactura = numFactura
+    def Factura(factura):
+        cantidad = int(input('facturas a registrar'))
+        
+        with open(factura, 'a', newline='') as archivo_csv:
+            writer = csv.writer(archivo_csv, delimiter=',')
+            for i in range(cantidad):
+                os.system('cls')
+                cliente = cliente ('cliente: ')
+                fecha = fecha ('fecha: ')
+                numFactura = numFactura ('numero de factura: ')
+                producto = producto ('producto: ')
+       
+                
+                
+            
             
