@@ -19,5 +19,5 @@ class RegistroDeVentas:
                 servicio = servicio ('servicio: ')
                 factura = factura ('factura: ')
                 RegistroVentas = RegistroVentas ('Registro de Ventas: ')
-                
+                writer.writerow([RegistroVentas, factura, servicio])
     
