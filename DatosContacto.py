@@ -17,7 +17,7 @@ class DatoContacto:
     def set_telefono(self, telefono):
         self.telefono = telefono
         
-    def DatoContacto(contacto):
+    def Registro_Dato_Contacto(contacto):
         cantidad = int(input('informacion a recibir'))
         
         with open(contacto, 'a', newline='') as archivo_csv:
@@ -27,4 +27,14 @@ class DatoContacto:
                 correo = input('correo: ')
                 telefono = input('telefono: ')
                 writer.writerow([ telefono, correo])
+                
+    def Registro_Dato_Contacto(contacto):
+        os.system('cls')
+        print('contactos registrados:')
+        with open(contacto, 'r', newline='') as archivo_csv:
+            reader = cvs.reader(archivo_csv)
+            for linea in reader:
+                print(f'telefono: {linea[0]}')
+                print(f'correo: {linea[1]}')
+            
                 
