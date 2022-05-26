@@ -20,4 +20,14 @@ class RegistroDeVentas:
                 factura = factura ('factura: ')
                 RegistroVentas = RegistroVentas ('Registro de Ventas: ')
                 writer.writerow([RegistroVentas, factura, servicio])
+                
+    def Recupe_Registro_Ventas(registro):
+        os.system('cls')
+        print('la factura es:')
+        with open(factura, 'r', newline='') as archivo_csv:
+            reader = cvs.reader(archivo_csv)
+            for linea in reader:
+                print(f'registro de ventas: {linea[0]}')
+                              
+                
     
