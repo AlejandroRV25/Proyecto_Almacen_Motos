@@ -25,7 +25,16 @@ class Factura:
                 fecha = string ('fecha: ')
                 numFactura = int ('numero de factura: ')
                 producto = producto ('producto: ')
-                writer.writerow([cliente, fecha, numFactura, producto])
+                writer.writerow([cliente, numFactura, producto])
+                
+    def Registro_Factura(factura):
+        os.system('cls')
+        print('la factura es:')
+        with open(factura, 'r', newline='') as archivo_csv:
+            reader = cvs.reader(archivo_csv)
+            for linea in reader:
+                print(f'cliente: {linea[0]}')
+                print(f'producto: {linea[1]}')   
        
                 
                 
