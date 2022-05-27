@@ -1,5 +1,7 @@
 import os
 import csv
+from Factura import Factura
+from Servicio import Servicio
 class RegistroDeVentas:
     def __init__(self, servicio:servicio, factura:factura, RegistroVentas:RegistroVentas):
         self.servicio = servicio
@@ -9,7 +11,7 @@ class RegistroDeVentas:
     def registro_ventas(self):
         pass
     
-    def RegistroDeVentas(registro):
+    def RegistroDeVentas(registro,csv,os):
         cantidad = int(input('registro de ventas'))
         
         with open(registro, 'a', newline='') as archivo_csv:
@@ -21,10 +23,10 @@ class RegistroDeVentas:
                 RegistroVentas = RegistroVentas ('Registro de Ventas: ')
                 writer.writerow([RegistroVentas, factura, servicio])
                 
-    def Recupe_Registro_Ventas(registro):
+    def Recupe_Registro_Ventas(registro,os,cvs):
         os.system('cls')
         print('la factura es:')
-        with open(factura, 'r', newline='') as archivo_csv:
+        with open(registro, 'r', newline='') as archivo_csv:
             reader = cvs.reader(archivo_csv)
             for linea in reader:
                 print(f'registro de ventas: {linea[0]}')
