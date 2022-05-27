@@ -1,5 +1,7 @@
 import os
 import csv
+from Cliente import Cliente
+from Producto import Producto
 class Factura:
     def __init__(self, producto:producto, cliente:cliente):
         self.producto = producto
@@ -14,7 +16,9 @@ class Factura:
 
     def set_numFactura(self, numFactura):
         self.numFactura = numFactura
-    def Factura(factura):
+
+        
+    def Factura(factura,csv,os,string):
         cantidad = int(input('facturas a registrar'))
         
         with open(factura, 'a', newline='') as archivo_csv:
@@ -27,15 +31,14 @@ class Factura:
                 producto = producto ('producto: ')
                 writer.writerow([cliente, numFactura, producto])
                 
-    def Registro_Factura(factura):
+    def Registro_Factura(factura,os,cvs):
         os.system('cls')
         print('la factura es:')
         with open(factura, 'r', newline='') as archivo_csv:
             reader = cvs.reader(archivo_csv)
             for linea in reader:
                 print(f'cliente: {linea[0]}')
-                print(f'producto: {linea[1]}')   
-       
+                print(f'producto: {linea[1]}')                  
                 
                 
             
