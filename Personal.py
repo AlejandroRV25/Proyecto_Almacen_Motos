@@ -32,7 +32,7 @@ class Personal:
     def Recuperar_personal(personal,os,cliente,cvs):
         os.system('cls')
         print('datos del personal:')
-        with open(cliente, 'r', newline='') as archivo_csv:
+        with open(personal, 'r', newline='') as archivo_csv:
             reader = cvs.reader(archivo_csv)
             for linea in reader:
                 print(f'rh: {linea[0]}')
