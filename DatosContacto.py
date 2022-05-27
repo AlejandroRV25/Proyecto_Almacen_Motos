@@ -28,7 +28,7 @@ class DatoContacto:
                 telefono = input('telefono: ')
                 writer.writerow([ telefono, correo])
                 
-    def Recupe_Registro_Dato_Contacto(contacto):
+    def Recuperar_Dato_Contacto(contacto):
         os.system('cls')
         print('contactos registrados:')
         with open(contacto, 'r', newline='') as archivo_csv:
