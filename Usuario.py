@@ -1,6 +1,6 @@
 
 class Usuario:
-    def __init__(self, nombre, documento, datoContacto):
+    def __init__(self, nombre:string, documento:int, datoContacto:datoContacto):
         self.nombre = nombre
         self.documento = documento
         self.datosContacto = datoContacto
